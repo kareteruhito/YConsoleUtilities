@@ -1,9 +1,13 @@
 ﻿using System.CommandLine;
 using OpenCvSharp;
 
+// ビルドメモ
 // dotnet.exe publish -c Release -r win-x64 /p:PublishSingleFile=true --self-contained true -o (Convert-Path ~/Bin)
 
 namespace YResize;
+/// <summary>
+/// 画像ファイルを倍率指定で拡大縮小する外部コマンド
+/// </summary>
 class Program
 {
     static void Resize(string srcFile, string dstFile, double scale)
